@@ -1,0 +1,44 @@
+body {
+    margin: 0 !important;
+    header {
+        background-color: #15325b !important;
+        min-height: 15vh !important;
+        display: flex;
+        align-items: center;
+    }
+    main {
+        height: 90vh;
+    }
+    footer {
+        user-select: none !important;
+        padding: 5em !important;
+        background-color: #15325b !important;
+        color: white !important;
+        display: flex;
+        justify-content: space-between;
+        > div {
+            display: flex;
+            &.socialMedia {
+                align-items: center;
+                gap: 1em;
+                font-size: 4em;
+                a {
+                    color: white !important;
+                }
+            }
+            &.myPersonalInfo {
+                flex-direction: column;
+                gap: 2em;
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.3em;
+                    gap: 0.5em;
+                    span {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
